@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Raleway:wght@300&display=swap');
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 100%;
+}
+
+  /* start media querrier */
+
+  /* 1200px / 16px = 75rem */
+  @media only screen and (min-width: 75rem) {
+    html {
+      font-size: 80%;
+    }
+  }
+
+  /* 768px / 16px = 48rem */
+  @media only screen and (min-width: 38rem) and (max-width: 74rem) {
+    html {
+      font-size: 60%;
+    }
+  }
+
+  /* 600px / 16px = 37.5rem */
+  @media only screen and (max-width: 37.5rem) {
+    html {
+      font-size: 40%;
+    }
+  }
+
+  /* end media querries */
+
+
+  /* start master styles */
+
+body {
+    color: #333;
+    font-family: 'Raleway', 'sans-serif';
+    letter-spacing: 0.125rem;
+}
+
+h1 {
+    font-size: 4rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+p {
+    font-size: 1.5rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+img {
+    display: block;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    font-size: 1rem;
+    background: #333;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    text-transform: uppercase;
+    padding: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+footer {
+    padding: 2rem, 4rem, 0.625rem, 4rem;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+/* end master styles */
+
+/* start text style "404 not found" */
+
+.header-text {
+    font-size: 1.563rem;
+    margin-top: 25px;
+    margin-left: 25px;
+}
+
+/* end text style "404 not found" */
+
+/* start img & text style */
+
+#flexbox-container {
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 5%;   
+}
+
+.flex-item {
+    margin: 15px;
+}
+
+#scarecrow-image {
+    width: 31.25rem;
+    padding-right: 15%;
+}
+
+#error-text-wrapper {
+    padding-left: 5%;
+    justify-content: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+
+}
+
+/* end img & text style */
+
+
+/* start footer style */
+#copyrights-text {
+    text-align: center;
+    font-weight: bold;
+    position: absolute;
+    top: 60px;
+    left: 50%;
+    margin-bottom: 5px;
+}
+
+.fa-copyright {
+    color: #333;
+}
+/* end footer style */
