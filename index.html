@@ -1,95 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
+    <title>404 Error Page</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" /> 
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Raleway:wght@300&display=swap" rel="stylesheet" /> 
+</head>
 
-    <link rel="icon" href="devchallenges.png" />
+<body>
+    <header>
+        <p class="header-text">404 not found</p>
+    </header>
 
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
+    <main>
+        <div id="flexbox-container">
+            <div id="scarecrow-image-wrapper" class="flex-item">
+                <img id="scarecrow-image" src="Scarecrow.png" alt="404 page not found picture">
+            </div>
+            
+            <div id="error-text-wrapper">
+                <h1 class="header-error">I have bad news for you</h1>
+                <p>The page you are looking for is temporarily unvailable</p>
+                <a href="https://www.google.com">Back to homepage</a>
+            </div>
+        </div>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    </main>
 
-    <title>Devchallenges</title>
+    <footer>
+        <div id="copyrights-wrapper">
+            <p id="copyrights-text"><i class="far fa-copyright"></i> natoku</p>
+        </div>
+    </footer>
 
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="welcome">
-      <div class="welcome-text">
-        <h1>
-          Welcome to
-          <a href="https://devchallenges.io/" target="_blank"
-            >devchallenges.io</a
-          >
-        </h1>
-
-        <p>
-          If you have any questions, don't hesitate to ask on Discord. Here are
-          7 general steps to complete the challenge:
-        </p>
-      </div>
-
-      <ul>
-        <li><b>Step 1:</b> Create a new repository on github</li>
-        <li><b>Step 2:</b> Copy resources, README.md to your repository</li>
-        <li>
-          <b>Step 3:</b> Login to Figma to checkout font, color, spacing,..
-        </li>
-        <li><b>Step 4:</b> Complete all user stories</li>
-        <li><b>Step 5:</b> Update README.md</li>
-        <li><b>Step 6:</b> Deploy your app and submit your solution</li>
-        <li>
-          <b>Step 7:</b> Share your solution on Discord, Twitter and other
-          platforms to ask for feedback
-        </li>
-      </ul>
-    </div>
-  </body>
+</body>
 </html>
