@@ -1,41 +1,76 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>404 Error Page</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet" /> 
-    <link href="https://fonts.googleapis.com/css2?family=Inconsolata&family=Raleway:wght@300&display=swap" rel="stylesheet" /> 
-</head>
+<html>
+    <head>
+        <title>Modern Interior Page</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="styles.css" />
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Redressed&display=swap" rel="stylesheet">
+    </head>
 
-<body>
-    <header>
-        <p class="header-text">404 not found</p>
-    </header>
+    <body>
+        <header>
+            <nav>
+                
+                <input type="checkbox" id="check">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-bars"></i>
+                </label>
 
-    <main>
-        <div id="flexbox-container">
-            <div id="scarecrow-image-wrapper" class="flex-item">
-                <img id="scarecrow-image" src="Scarecrow.png" alt="404 page not found picture">
-            </div>
-            
-            <div id="error-text-wrapper">
-                <h1 class="header-error">I have bad news for you</h1>
-                <p>The page you are looking for is temporarily unvailable</p>
-                <a href="https://www.google.com">Back to homepage</a>
-            </div>
-        </div>
+                <label class="logo">This interior</label>
 
-    </main>
+                <ul class="nav__links">
+                    <li><a class="active" href="#home">Home</a></li>
+                    <li><a href="#collection">Collection</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
 
-    <footer>
-        <div id="copyrights-wrapper">
-            <p id="copyrights-text"><i class="far fa-copyright"></i> natoku</p>
-        </div>
-    </footer>
+            </nav>
+        </header>
 
-</body>
+        <main>
+          <article class="flexbox-container" id="flex-container">
+                            
+            <section class="interior-description-wrapper">
+              <h1 class="interior-headline">Modern Interior</h1>
+              <p class="interior-paragraph">A full-Service residential & commercial interior design and staging company offering professional organizing & eco-services.</p>
+            </section>
+
+            <section class="living-room-wrapper"> <!-- parent start -->
+
+              <div class="interior-img-wrapper"> <!-- child1 start -->
+                <img id="interior-img" src="photo1.png" alt="Interior of a Living Room" />
+              </div> <!-- child1 end -->
+
+              <div id="black-recktangle"> <!-- child2 start -->
+                <div id="aliza">
+                  <picture>
+                    <img id="aliza-img" src="photo2.png" alt="Aliza Webber"/>
+                  </picture>
+
+                  <div id="aliza-job">
+                    <h4>Aliza Webber</h4>
+                    <p id="job-title">Interior designer</p>
+                  </div>
+                </div>
+
+                <div class="design-2020-text">
+                  <h3>Designed in 2020 by Aliza Webber</h3>
+                </div> 
+              </div> <!-- child2 end -->
+
+            </section> <!-- parent end -->
+
+          </article>
+
+        </main>
+
+        <footer>
+            <p><i class="far fa-copyright"></i> natoku | inspired by devchallenges.io</p>
+        </footer>
+
+    </body>
 </html>

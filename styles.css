@@ -1,145 +1,290 @@
-@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Raleway:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&family=Redressed&display=swap');
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
 }
 
 html {
-    font-size: 100%;
+  font-size: 100%;
 }
 
-  /* start media querrier */
-
-  /* 1200px / 16px = 75rem */
-  @media only screen and (min-width: 75rem) {
-    html {
-      font-size: 80%;
-    }
-  }
-
-  /* 768px / 16px = 48rem */
-  @media only screen and (min-width: 38rem) and (max-width: 74rem) {
-    html {
-      font-size: 60%;
-    }
-  }
-
-  /* 600px / 16px = 37.5rem */
-  @media only screen and (max-width: 37.5rem) {
-    html {
-      font-size: 40%;
-    }
-  }
-
-  /* end media querries */
-
-
-  /* start master styles */
 
 body {
-    color: #333;
-    font-family: 'Raleway', 'sans-serif';
-    letter-spacing: 0.125rem;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Quicksand', 'Open Sans';
+  width: 100%;
+  height:100%;
 }
 
 h1 {
-    font-size: 4rem;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  font-size: 3.375rem;
 }
 
+h2 {
+  font-size: 2.667rem;
+}
+
+h3 {
+  font-size: 2.107rem;
+}   
+
 p {
-    font-size: 1.5rem;
-    padding-top: 15px;
-    padding-bottom: 15px;
+  font-size: 1rem;
+}
+
+a {
+  color: #fff;
 }
 
 img {
-    display: block;
-    width: auto;
-    max-width: 100%;
-    height: auto;
+  display: block;
+  width: 100%;
 }
 
-button {
-    font-size: 1rem;
-    background: #333;
-    border: none;
-    border-radius: 4px;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 15px;
-    padding: 15px;
-    margin-bottom: 15px;
+
+
+/* start navigation bar */
+
+nav {
+  background: #333;
+  height: 80px;
+  width: 100%;
 }
+
+label.logo {
+  color: rgb(245, 245, 245);
+  border: 1px solid rgb(245, 245, 245);
+  font-size: 1.25rem;
+  line-height: 80px;
+  padding: 10px 10px;
+  margin-left: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+nav ul {
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li {
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 5px;
+}
+
+nav ul li a {
+  color: #fff;
+  font-size: 17px;
+  padding: 7px 13px;
+  text-transform: uppercase;
+}
+
+a.active, a:hover {
+  font-weight: bold;
+  transition: 0.5s;
+}
+
+.checkbtn {
+  font-size: 1.25rem;
+  color: #fff;
+  float: right;
+  line-height: 80px;
+  margin-right: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+#check {
+  display: none;
+}
+
+/* end navigation bar */
+
+
+.flexbox-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 100%;
+  height: 650px;
+}
+
+
+/* start description text "modern interior" */
+
+.interior-headline {
+  width: 359px;
+  height: 61px;
+}
+
+.interior-paragraph {
+  width: 410px;
+  height: 145px;
+  margin-top: 100px;
+}
+
+/* end description text "modern interior" */
+
+/* start hero img */
+
+.living-room-wrapper {
+  position: relative;
+  z-index: 1;
+}
+
+#interior-img {
+  width: 40rem;
+  height: auto;
+  transform: matrix(1, 0, 0, 1, 0, 0);
+  border: 2px solid white;
+}
+
+#black-recktangle {
+  background-color: #333;
+  width: 22rem;
+  height: 12rem;
+  padding: 10px;
+  position: absolute;
+  top: 410px;
+  left: 260px;
+  z-index: 1;
+}
+
+#aliza {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+#aliza-job {
+  padding-left: 10px;
+}
+
+#job-title p {
+  font-size: 14px;
+}
+
+#aliza-img {
+  width: 4rem;
+  height: auto;
+  border: 2px solid white;
+  border-radius: 50px;
+}
+
+.design-2020-text {
+  padding-top: 10px;
+}
+ 
 
 footer {
-    padding: 2rem, 4rem, 0.625rem, 4rem;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    right: 0;
+  background-color: #333;
+  text-align: center;
+  padding: 10px;
+  width: 100%;
+  position: fixed;
+  left: 0;
+  bottom: 0;
 }
 
-/* end master styles */
+/* start media querries */
 
-/* start text style "404 not found" */
+@media (max-width: 952px) {
+  h1 {
+    font-size: 2rem;
+  }
 
-.header-text {
-    font-size: 1.563rem;
-    margin-top: 25px;
-    margin-left: 25px;
+  h3 {
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .flexbox-container {
+    max-width: 90%;
+    height: 750px;
+  }
+
+  .interior-description-wrapper {
+    margin: 0 auto;
+  }
+
+  .interior-headline, .interior-paragraph {
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+
+  #black-recktangle {
+    max-width: 60%;
+    height: auto;
+    left: 20%;
+    top: -50px;
+    position: relative;
+    z-index: 1;
+  }
+
+  label.logo {
+    font-size: 26px;
+    padding: 10px 10px;
+    margin-left: 20px;
+  }
+
+  nav ul li a {
+    font-size: 16px;
+  }
 }
 
-/* end text style "404 not found" */
+@media (max-width: 858px) {
+  .checkbtn {
+    display: block;
+  }
 
-/* start img & text style */
-
-#flexbox-container {
-    width: 90%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 5%;   
-}
-
-.flex-item {
-    margin: 15px;
-}
-
-#scarecrow-image {
-    width: 31.25rem;
-    padding-right: 15%;
-}
-
-#error-text-wrapper {
-    padding-left: 5%;
-    justify-content: center;
-    margin-top: 5%;
-    margin-bottom: 5%;
-
-}
-
-/* end img & text style */
-
-
-/* start footer style */
-#copyrights-text {
+  ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: #333;
+    top: 80px;
+    left: -100%;
     text-align: center;
-    font-weight: bold;
-    position: absolute;
-    top: 60px;
-    left: 50%;
-    margin-bottom: 5px;
+    transition: all .5s;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+  }
+
+  a.active, a:hover {
+    color: rgb(245, 245, 245);
+  }
+  
+  #check:checked ~ ul {
+    left: 0;
+  }
 }
 
-.fa-copyright {
-    color: #333;
-}
-/* end footer style */
+/* end media querries */
